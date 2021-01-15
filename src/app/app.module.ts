@@ -23,6 +23,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { PcComponentsComponent } from './pc-components/pc-components.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     EcommerseComponent,
     IntelComponent,
     AmdComponent,
-    ProductListComponent
+    ProductListComponent,
+    PcComponentsComponent
   ],
   imports: [
     BrowserModule,
