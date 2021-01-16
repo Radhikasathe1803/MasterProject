@@ -1,19 +1,19 @@
 import { Product } from "./product";
 
-export class Cpu extends Product
-{
-    available: boolean;
+export class CPU{
+    available:boolean;
     brand: string;
-    color: string;
+    color:string;
     coreClock: number;
-    coreCount:  number;
+    coreCount:number;
     graphicsType: string;
     id: number;
-    imageUrl: string;
     integratedGraphics: boolean;
     manufacturer: string;
     name: string;
-    price: number;                                                                                                                                                                                                                                      
+    price: number;
     simMultiThread: boolean;
     tdp: number;
+	isAvailable:boolean;
+    imageUrl: string;
 }
