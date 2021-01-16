@@ -1,0 +1,22 @@
+
+ 
+ <mat-card  class="grid-box" *ngFor="let usecase of usecaseList">
+
+
+  <mat-card-content>
+    
+
+      <h2><b>{{ usecase.title }}</b></h2><br>
+      <img mat-card-image src="{{ usecase.images }}" alt="Photo of a Shiba Inu">
+     
+    
+      <div class="desc">{{ usecase.description}}</div>
+      <mat-card-actions>
+        &nbsp;&nbsp;<a mat-button routerLinkActive="list-item-active" routerLink="/product-list" id="button">View</a><br>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_intel" id="button">Customize With Intel</a>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_amd" id="button">Customize With Amd</a>
+
+      </mat-card-actions>
+  </mat-card-content>
+
+</mat-card>

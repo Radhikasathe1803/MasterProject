@@ -1,0 +1,68 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/"> <mat-icon>home</mat-icon> &nbsp; Home</a>
+      <a mat-list-item routerLinkActive="list-item-active" routerLink="/addtocart">
+        <mat-icon>shopping_cart</mat-icon>&nbsp;
+        Cart</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/product-list">
+        <mat-icon>shopping_basket</mat-icon>&nbsp;
+        Shopping</a>
+
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/contactus">
+          <mat-icon>contact_page</mat-icon>&nbsp;
+          Contact Us
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Build In One Go</span>
+
+
+            <mat-search-bar class="search"></mat-search-bar>
+            <ul   class="menu">
+              <li>
+
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+                  <mat-menu #menu="matMenu">
+                      <button mat-menu-item>Sign Up</button>
+                      <button mat-menu-item>Sign In</button>
+                  </mat-menu>
+                  <!-- manumodule used -->
+
+              </li>
+            </ul>
+
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+
+      <mat-toolbar id="footer">
+        <span class="created-by">
+          Created with ♥ by <b><a href="https://BuildInOneOrder.team.link/8V2f" target="_blank">BuildInOneOrder</a></b> 2021
+        </span>
+        <!-- <ul class="uli">
+          <li><a href="https://www.facebook.com/profile.php?id=100012512077239"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/raj-kumar-web-designer/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul> -->
+      </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

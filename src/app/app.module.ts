@@ -1,6 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,27 +12,28 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { NgMatSearchBarModule } from 'ng-mat-search-bar';
-import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
-import { EcommerseComponent } from './ecommerse/ecommerse.component';
-import { IntelComponent } from './customize/intel/intel.component';
-import { AmdComponent } from './customize/amd/amd.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { NavComponent } from './container/nav/nav.component';
+import { HomeComponent } from './container/home/home.component';
+import { IntelComponent } from './components/customize/intel/intel.component';
+import { AmdComponent } from './components/customize/amd/amd.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { PcComponentsComponent } from './pc-components/pc-components.component';
+import { PcComponentsComponent } from './components/pc-components/pc-components.component';
+import { MatTableModule } from '@angular/material/table' ;
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-    EcommerseComponent,
+   
     IntelComponent,
     AmdComponent,
     ProductListComponent,
-    PcComponentsComponent
+    PcComponentsComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +50,10 @@ import { PcComponentsComponent } from './pc-components/pc-components.component';
     MatMenuModule,
     NgMatSearchBarModule,
     HttpClientModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MatTableModule ,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

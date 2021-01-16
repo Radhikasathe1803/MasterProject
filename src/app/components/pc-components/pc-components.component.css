@@ -1,0 +1,23 @@
+table {
+  width: 90%;
+}
+
+.filter{
+  margin-top:2%;
+  margin-left: 4%;
+ 
+}
+.mat-elevation-z8{
+  padding-top: 2%;
+  
+}
+.search{
+
+  margin-left: 90%;
+}
+
+.mat-elevation-z8 th{
+  background-color: #ff9100;
+  color : black;
+  font-size: 15px;
+}
