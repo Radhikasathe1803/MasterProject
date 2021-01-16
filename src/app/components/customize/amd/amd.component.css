@@ -1,25 +1,13 @@
-.grid-container {
-    margin: 20px;
-  }
-  
-  .dashboard-card {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
-  
-  .more-button {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-  }
-  
-  .dashboard-card-content {
-    text-align: center;
-  }
-  #compobutton{
-    background-color: #ef6c00;
-    margin-left: 90px;
-  }
+.table{
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#compobutton{
+  background-color: #ef6c00;
+ 
+  margin-top: 10px;
+  margin-left: 90px;
+}
