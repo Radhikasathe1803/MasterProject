@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { Usecase } from '../common/usecase';
+import { title } from 'process';
 
 @Component({
   selector: 'app-home',
@@ -8,32 +10,16 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 },
-          { title: 'Card 5', cols: 1, rows: 1 },
-          { title: 'Card 6', cols: 1, rows: 1 }
-        ];
-      }
+  constructor() {}
+  
+  usecaseList  : Usecase []=[
 
-      return [
-       
-        { title: 'Card 1', cols: 1, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 1 },
-        { title: 'Card 4', cols: 1, rows: 1 },
-        { title: 'Card 5', cols: 1, rows: 1 },
-        { title: 'Card 6', cols: 1, rows: 1 }
-      ];
-    })
-  );
+ 
+new Usecase("For Student","assets/images/student.png","Students who want to build"),
+new Usecase("For Video Editing","assets/images/video.jpg","Students who want to build"),
+new Usecase("For Gaming","assets/images/gaming.jpg","Students who want to build"),
+];
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+
+
 }

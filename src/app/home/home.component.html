@@ -1,29 +1,22 @@
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="3" rowHeight="590px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>
-            {{card.title}}
-          </mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. 
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-         
-          &nbsp;&nbsp;<button mat-button>View</button><br>
-          <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_intel" id="button">Customize With Intel</a>
-          <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_amd" id="button">Customize With Amd</a>
 
-         
-        </mat-card-actions>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</div>
+ 
+ <mat-card  class="grid-box" *ngFor="let usecase of usecaseList">
+
+
+  <mat-card-content>
+    
+
+      <h2><b>{{ usecase.title }}</b></h2><br>
+      <img mat-card-image src="{{ usecase.images }}" alt="Photo of a Shiba Inu">
+     
+    
+      <div class="desc">{{ usecase.description}}</div>
+      <mat-card-actions>
+        &nbsp;&nbsp;<a mat-button routerLinkActive="list-item-active" routerLink="/product-list" id="button">View</a><br>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_intel" id="button">Customize With Intel</a>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_amd" id="button">Customize With Amd</a>
+
+      </mat-card-actions>
+  </mat-card-content>
+
+</mat-card>

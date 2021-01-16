@@ -1,9 +1,12 @@
 .sidenav-container {
   height: 100%;
 }
-footer{
-  background-color: #f57c00;
+#footer{
+  margin-top: 43%;
+  position: relative;
+  background-color:#ff9100;
   bottom: 0;
+  color: black;
 }
 .sidenav {
   width: 200px;
