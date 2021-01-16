@@ -1,25 +1,23 @@
-.grid-container {
-  margin: 20px;
+table {
+  width: 90%;
 }
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+.filter{
+  margin-top:2%;
+  margin-left: 4%;
+ 
+}
+.mat-elevation-z8{
+  padding-top: 2%;
+  
+}
+.search{
+
+  margin-left: 90%;
 }
 
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.dashboard-card-content {
-  text-align: center;
-}
-#compobutton{
-  background-color: #ef6c00;
-  margin-left: 90px;
+.mat-elevation-z8 th{
+  background-color: #ff9100;
+  color : black;
+  font-size: 15px;
 }
