@@ -35,4 +35,9 @@ export class IntelComponent{
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  
+  
+  selected(){
+
+  }
 }

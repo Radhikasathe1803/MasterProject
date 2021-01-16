@@ -1,8 +1,9 @@
 import { MatTableDataSource } from '@angular/material/table';
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { ProductService } from 'MasterProject/src/app/services/product.service';
-import { Cpu } from 'MasterProject/src/app/common/products/cpu';
 import { Router } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
+import { CPU } from 'src/app/common/products/cpu';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -12,23 +13,20 @@ import { Router } from '@angular/router';
 })
 export class PcComponentsComponent implements OnInit {
 
+  cpu: Observable<CPU[]>;
+  cpuhead=['name','coreClock']
 
-  cpu: Cpu[];
-
-  constructor(private productService : ProductService,private router : Router) { }
+  constructor(private productService : ProductService) { }
 
       ngOnInit(): void {   
         this.listProductCategories();
     }
     listProductCategories() {
-      this.productService.getProductList().subscribe(
-        data => {
-        //  console.log('Product Categories=' + JSON.stringify(data));
-          this.cpu = data;
-        });
+     
+      this.cpu = this.productService.getProductList();
       }
-  
-    studentsDetails(id: number){
-      this.router.navigate(['students-details', id]);
-    }
+
+      cpucall(){
+
+      }
 }

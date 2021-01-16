@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { Cpu } from 'MasterProject/src/app/common/products/cpu';
-
 
 @Injectable({
   providedIn: 'root'
@@ -14,18 +11,10 @@ export class ProductService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getProductList(productName:String): Observable<Cpu[]> {
-    const productUrl = `${this.baseUrl}/${productName}`;
-    return this.httpClient.get<GetResponse>(productUrl).pipe(
-      map(response => response._embedded.products)
-    );
-  }
+  getProductList():  Observable<any>  {
+    const productUrl = `${this.baseUrl}`+`/cpu`;
+    console.log(productUrl);
 
-  
-}
-
-interface GetResponse {
-  _embedded: {
-    products: Cpu[];
-  }
+    return this.httpClient.get(`${this.baseUrl}`+`/cpu`);
+  } 
 }

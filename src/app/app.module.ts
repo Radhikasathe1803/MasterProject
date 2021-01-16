@@ -15,7 +15,6 @@ import { NgMatSearchBarModule } from 'ng-mat-search-bar';
 import { NavComponent } from './container/nav/nav.component';
 import { HomeComponent } from './container/home/home.component';
 import { IntelComponent } from './components/customize/intel/intel.component';
-import { AmdComponent } from './components/customize/amd/amd.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
@@ -31,7 +30,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
    
     IntelComponent,
-    AmdComponent,
     ProductListComponent,
     PcComponentsComponent,
   ],
