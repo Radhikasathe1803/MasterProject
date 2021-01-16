@@ -1,0 +1,93 @@
+.sidenav-container {
+  height: 100%;
+}
+footer{
+  background-color: #f57c00;
+  bottom: 0;
+}
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.menu li{
+  list-style: none;
+}
+
+.search{
+  position: relative;
+  margin-left:82%;
+}
+
+.menu{
+  position: relative;
+  margin-left:-40px;
+}
+
+
+
+/* ul{
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+  }
+  ul li{
+  list-style: none;
+  margin: 0 20px;
+  
+  }
+  ul li .fa{
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    transition: .5s;
+    
+    }
+    ul li a{
+      position: relative;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: rgb(36, 21, 21);
+      text-align: center;
+      transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+      transition: .5s;
+      box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+      }
+      ul li a::before{
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -15px;
+      height: 100%;
+      width: 15px;
+      background: #b1b1b1;
+      transition: .5s;
+      transform: rotate(0deg) skewY(-45deg);
+      }
+
+    /* bottomw  shadow 
+      ul li a::after{
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -8px;
+        height: 50%;
+        width: 100%;
+        background: #b1b1b1;
+        transition: .5s;
+        transform: rotate(0deg) skewX(-45deg);
+        } */

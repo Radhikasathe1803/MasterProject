@@ -1,0 +1,24 @@
+
+   <!-- <div class="row-md-4">
+<div    class="col-md-3"> -->
+
+  <mat-card  class="grid-box" *ngFor="let tempProduct of products">
+
+
+    <mat-card-content>
+      <img mat-card-image src="{{ tempProduct.imageUrl }}"
+       alt="Systems" id="pi">
+
+        <h2>{{ tempProduct.name }}</h2><br>
+        <div class="price">{{ tempProduct.unitPrice | currency:'USD' }}</div>
+        <mat-card-actions>
+          <button mat-raised-button color="warn">Wishlist</button>
+
+          <button mat-raised-button color="warn">Add To Cart</button>
+        </mat-card-actions>
+    </mat-card-content>
+
+  </mat-card>
+  <!--  </div>
+  </div> -->
+

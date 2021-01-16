@@ -1,0 +1,36 @@
+/* .example-card {
+  max-width: 400px;
+  display:-moz-inline-grid;
+} */
+
+/* .example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+ */
+ .grid-box{
+  display: inline-flex;
+  grid-template-columns: 2fr 2fr 2fr;
+  justify-items: center;
+  margin: 2%;
+  background-color: #000;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier
+  (.155,1.105,.295,1.12);
+
+ }
+ .grid-box:hover{
+  transform: scale(1.10);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12),
+   0 4px 8px rgba(0,0,0,.06);
+ }
+
+ /* this is faltu line */
+ .grid-box img{
+
+   width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+ }
