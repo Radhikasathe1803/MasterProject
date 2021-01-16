@@ -24,6 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { PcComponentsComponent } from './pc-components/pc-components.component';
+import { AddlistComponent } from './addlist/addlist.component';
+import { MatTableModule } from '@angular/material/table' ;
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { PcComponentsComponent } from './pc-components/pc-components.component';
     IntelComponent,
     AmdComponent,
     ProductListComponent,
-    PcComponentsComponent
+    PcComponentsComponent,
+    AddlistComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { PcComponentsComponent } from './pc-components/pc-components.component';
     MatMenuModule,
     NgMatSearchBarModule,
     HttpClientModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MatTableModule 
   ],
   providers: [],
   bootstrap: [AppComponent],
