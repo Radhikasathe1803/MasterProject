@@ -1,29 +1,36 @@
-.grid-container {
-  margin: 20px;
-}
 
-.dashboard-card {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-}
+ .grid-box{
+  display: inline-flex;
+  grid-template-columns: 2fr 2fr 2fr;
+  justify-items: center;
+  margin: 2%;
+  margin-top: 5%;
+  background-color: #ff9100;
+  width: 300px;
+  height: 520px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier
+  (.155,1.105,.295,1.12);
+  color:black;
+ }
+ .grid-box:hover{
+  transform: scale(1.10);
+  box-shadow: 0 10px 20px rgba(240, 95, 11, 0.12),
+   0 4px 8px rgba(238, 100, 8, 0.06);
 
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
+  
+ }
 
-.dashboard-card-content {
-  text-align: center;
-}
+ /* this is faltu line */
+ .grid-box img{
 
-button{
-  background-color: #ef6c00;
-  color : black;
-}
+   width: 100%;
+   height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
 #button{
-  margin-top: 3px;
-}
+  color: white;
+  background-color: black;
+ }

@@ -2,7 +2,7 @@ import { Product } from "./product";
 
 export class ExternalStorage extends Product{
     id:number;
-   // ExternalStorageType type;
-        interFace:string;
+    ExternalStorageType : string;
+    interFace:string;
     capacity:number;
 }
