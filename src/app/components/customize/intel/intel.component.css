@@ -1,4 +1,4 @@
-.grid-container {
+/* .grid-container {
     margin: 20px;
   }
   
@@ -21,5 +21,18 @@
   }
   #compobutton{
     background-color: #ef6c00;
+    margin-left: 90px;
+  } */
+
+  .table{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #compobutton{
+    background-color: #ef6c00;
+    margin-top: 20px;
     margin-left: 90px;
   }

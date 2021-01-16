@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { map } from 'rxjs/operators';
-import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-import { Usecase } from '../common/usecase';
-import { title } from 'process';
+import { Usecase } from '../../common/usecase';
 
 @Component({
   selector: 'app-home',

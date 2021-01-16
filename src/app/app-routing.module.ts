@@ -1,10 +1,10 @@
-import { ProductListComponent } from './product-list/product-list.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AmdComponent } from './customize/amd/amd.component';
-import { IntelComponent } from './customize/intel/intel.component';
-import { HomeComponent } from './home/home.component';
-import { PcComponentsComponent } from './pc-components/pc-components.component';
+import { AmdComponent } from './components/customize/amd/amd.component';
+import { IntelComponent } from './components/customize/intel/intel.component';
+import { HomeComponent } from './container/home/home.component';
+import { PcComponentsComponent } from './components/pc-components/pc-components.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
