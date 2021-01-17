@@ -14,18 +14,14 @@ class="search"  placeholder="Please enter"></mat-search-bar> -->
 
 <table class="table table-striped">
   <thead>
-    <tr>
-      <th>name</th>
-      <th>manufacturer</th>
-      <th>price</th>
-      <th>Actions</th>
+    <tr *ngFor="let pd of productHead">
+      <th>{{pd}}</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let pd of cpu | async">
+    <tr *ngFor="let pd of productObser |async ">
       <td>{{pd.name}}</td>
-     
-      
+      <td><img src="{{pd.imageUrl}}"> </td>
     </tr>
   </tbody>
 </table>

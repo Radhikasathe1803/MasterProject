@@ -7,14 +7,14 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-  private baseUrl = 'http://13.127.23.111:8080/products';
+  private baseUrl = 'http://13.233.86.9:8080/products';
 
   constructor(private httpClient: HttpClient) { }
 
-  getProductList():  Observable<any>  {
-    const productUrl = `${this.baseUrl}`+`/cpu`;
+  getProductList(): Observable<any> {
+    const productUrl = `${this.baseUrl}` + `/cpu`;
     console.log(productUrl);
 
-    return this.httpClient.get(`${this.baseUrl}`+`/cpu`);
-  } 
+    return this.httpClient.get(`${this.baseUrl}` + `/cpu`);
+  }
 }
