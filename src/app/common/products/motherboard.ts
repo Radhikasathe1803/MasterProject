@@ -3,7 +3,7 @@ import { Product } from "./product";
 export class Motherboard extends Product {
     id:number;
     socket:string;
-  //  FormFactor formFactor;........................enum
+   FormFactor :string;
     maxMemory:number;
     memorySlots:number;
     chipset:string;

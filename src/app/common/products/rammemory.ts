@@ -5,7 +5,7 @@ import { Product } from "./product";
     noOfSticks:number;
     ramSize:number;
     totalSize:number;
-    //RamType type;....................................enum
+    RamType :string;
     speed:number;
     firstWordLatency:number;
     columnAddressStrobe:number;

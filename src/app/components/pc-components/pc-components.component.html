@@ -8,19 +8,17 @@
 
   <!-- <mat-search-bar (keyup)="applyFilter($event.target.value)" 
 class="search"  placeholder="Please enter"></mat-search-bar> -->
-
-
 </div>
-
 <table class="table table-striped">
   <thead>
-    <tr *ngFor="let pd of productHead">
-      <th>{{pd}}</th>
-    </tr>
+    
+      <th *ngFor="let pd of productHead">{{pd}}</th>
+    
   </thead>
   <tbody>
     <tr *ngFor="let pd of productObser |async ">
       <td>{{pd.name}}</td>
+      <td>{{pd.brand}}</td>
       <td><img src="{{pd.imageUrl}}"> </td>
     </tr>
   </tbody>

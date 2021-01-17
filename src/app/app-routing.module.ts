@@ -10,8 +10,6 @@ const routes: Routes = [
   {path:'product-list' ,component:ProductListComponent},
   {path:'cutomize_intel',component:IntelComponent},
   {path:'addcomponent',component:PcComponentsComponent}
-
-
 ];
 
 @NgModule({

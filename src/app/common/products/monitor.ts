@@ -6,6 +6,6 @@ export class Monitor extends Product{
 	resultion:string;
 	refreshRate:number;
 	responseTime:number;
-	//MonitorPanelType panelType;.....................enum
+	MonitorPanelType:string;
 	aspectRatio:string;
 }

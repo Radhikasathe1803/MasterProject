@@ -4,7 +4,7 @@ import { Product } from "./product";
     id:number;
     formFactor:string;
     wattage:number;
-    // PowerModularType modular;..............................enum 
-    // PowerEfficiencyType efficiency;........................enum
+     PowerModularType:string;
+     PowerEfficiencyType :string;
  }
  
