@@ -8,14 +8,14 @@ import { ProductConstants } from '../common/ProductConstants';
 })
 export class CaseService {
 
-  private baseUrl = `${ProductConstants.BASE_URL}${ProductConstants.PRODUCT_ENDPOINT}`
+  private baseUrl = `${ProductConstants.BASE_URL}${ProductConstants.PRODUCT_ENDPOINT}/${ProductConstants.CORE_CASE}`
 
   constructor(private httpClient: HttpClient) { }
 
-  getProductList():  Observable<any>  {
-    const productUrl = `${this.baseUrl}`+`${ProductConstants.CORE_CASE}`;
+  getProductList(): Observable<any> {
+    const productUrl = `${this.baseUrl}`;
     console.log(productUrl);
 
-    return this.httpClient.get(`${this.baseUrl}`+`/case`);
-}
+    return this.httpClient.get(productUrl);
+  }
 }

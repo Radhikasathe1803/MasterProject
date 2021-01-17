@@ -12,7 +12,7 @@ export class ProductConstants {
     static CORE_MONITOR: string = "monitor";
     static CORE_OPTICAL: string = "optical";
     static CORE_PSU: string = "psu";
-    static CORE_CASE: string = "/CASE";
+    static CORE_CASE: string = "CASE";
 
     //	 ACCESSORIES 
 
