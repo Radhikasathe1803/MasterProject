@@ -1,18 +1,61 @@
-
- 
- <mat-card  class="grid-box" *ngFor="let usecase of usecaseList">
+<!-- *ngFor="let usecase of usecaseLis
+ -->
+ <mat-card  class="grid-box" >
 
 
   <mat-card-content>
-    
 
-      <h2><b>{{ usecase.title }}</b></h2><br>
-      <img mat-card-image src="{{ usecase.images }}" alt="Photo of a Shiba Inu">
-     
-    
-      <div class="desc">{{ usecase.description}}</div>
+
+      <h2><b>For Student</b></h2><br>
+      <img mat-card-image src='assets\images\student.png' alt="Photo of a Shiba Inu">
+
+
+      <div class="desc">Students who want to build</div>
       <mat-card-actions>
-        &nbsp;&nbsp;<a mat-button routerLinkActive="list-item-active" routerLink="/product-list" id="button">View</a><br>
+        &nbsp;&nbsp;<a mat-button routerLinkActive="list-item-active"
+         id="button" (click)="selected('Students')">View</a><br>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_intel" id="button">Customize With Intel</a>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_amd" id="button">Customize With Amd</a>
+
+      </mat-card-actions>
+  </mat-card-content>
+
+</mat-card>
+<mat-card  class="grid-box" >
+
+
+  <mat-card-content>
+
+
+      <h2><b>For Student</b></h2><br>
+      <img mat-card-image src='assets\images\gaming.jpg' alt="Photo of a Shiba Inu">
+
+
+      <div class="desc">gaming</div>
+      <mat-card-actions>
+        &nbsp;&nbsp;<a mat-button routerLinkActive="list-item-active"
+         id="button" (click)="selected('gaming')">View</a><br>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_intel" id="button">Customize With Intel</a>
+        <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_amd" id="button">Customize With Amd</a>
+
+      </mat-card-actions>
+  </mat-card-content>
+
+</mat-card>
+<mat-card  class="grid-box" >
+
+
+  <mat-card-content>
+
+
+      <h2><b>For Student</b></h2><br>
+      <img mat-card-image src='assets\images\videoediting.jpg' alt="Photo ofsrc a Shiba Inu">
+
+
+      <div class="desc">For Video</div>
+      <mat-card-actions>
+        &nbsp;&nbsp;<a mat-button routerLinkActive="list-item-active"
+         id="button" (click)="selected('video')">View</a><br>
         <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_intel" id="button">Customize With Intel</a>
         <a mat-button routerLinkActive="list-item-active" routerLink="/cutomize_amd" id="button">Customize With Amd</a>
 

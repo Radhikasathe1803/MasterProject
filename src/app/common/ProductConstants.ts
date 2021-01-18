@@ -1,6 +1,6 @@
 export class ProductConstants {
 
-    static BASE_URL: string = "http://13.233.86.9:8080";
+    static BASE_URL: string = "http://13.233.86.9:3333";
     static PRODUCT_ENDPOINT = "/products"
     //	CORE COMPONENTS
     static CORE_CPU: string = "cpu";
@@ -14,7 +14,7 @@ export class ProductConstants {
     static CORE_PSU: string = "psu";
     static CORE_CASE: string = "CASE";
 
-    //	 ACCESSORIES 
+    //	 ACCESSORIES
 
     static ACC_CASE: string = "CASE-ACC";
     static ACC_CASE_FAN: string = "CASE-FAN";
