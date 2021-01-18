@@ -77,7 +77,9 @@ export class PcComponentsComponent implements OnInit {
             "radiatorSize",]
           this.productObser = this.cpuCooler.getProductList();
           // this.productObser.forEach(p => );
-
+          this.productObser.subscribe((p) => {
+              console.log(p);
+             });
 
         }
         break;

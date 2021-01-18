@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 })
 export class GraphicCardService {
 
-  private baseUrl = 'http://13.127.23.111:8080/products';
+  private baseUrl ='http://13.233.86.9:8080/products';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -15,5 +15,5 @@ export class GraphicCardService {
     console.log(productUrl);
 
     return this.httpClient.get(`${this.baseUrl}`+`/gpu`);
-  } 
+  }
 }

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class CpucoolerService {
 
-  private baseUrl = 'http://13.127.23.111:8080/products';
+  private baseUrl = 'http://13.233.86.9:8080/products';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -15,5 +15,5 @@ export class CpucoolerService {
     const productUrl = `${this.baseUrl}`+`/cooler`;
     console.log(productUrl);
     return this.httpClient.get(`${this.baseUrl}`+`/cooler`);
-  } 
+  }
 }
