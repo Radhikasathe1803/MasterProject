@@ -7,6 +7,8 @@ export class DataService {
 
   constructor() { }
   private data: string;
+  private name: string;
+  private component: Map<string,number> = new Map();
 
    public getData() {
    let temp:String = this.data
@@ -21,5 +23,18 @@ export class DataService {
   eraseData(){
     this.data=undefined;
   }
+
+  public getComponent(key:string) :number{
+    return this.component.get(key);
+   }
+   setComponent(key:string,value:number) {
+     this.component.set(key,value);
+   }
+   getMap():Map<string,number>{
+    return this.component;
+   }
+   eraseName(){
+     this.name=undefined;
+   }
 
 }

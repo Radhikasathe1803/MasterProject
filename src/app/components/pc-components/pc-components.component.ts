@@ -25,9 +25,10 @@ export class PcComponentsComponent implements OnInit {
   productObser: Observable<any[]>;
   productHead = [];
   data = [];
+ 
 
   type: String;
-  constructor(private productService: ProductService,
+  constructor(private productService: ProductService,private router: Router,
     private dataService: DataService, private cpuCooler: CpucoolerService,
     private graphicsCard: GraphicCardService, private caseservice: CaseService,
     private motherBoard: MotherBoardService,
@@ -44,13 +45,15 @@ export class PcComponentsComponent implements OnInit {
     switch (this.type) {
       case ProductConstants.CORE_CPU:
         {
-          this.productHead = ["id","image", "name", "brand", "color", "coreClock", "coreCount", "graphicsType",
+          this.productHead = ["id","image", "name", "brand",  "coreClock", "coreCount", "graphicsType",
             "integratedGraphics", "manufacturer", "price", "simMultiThread", "tdp", "Available"
           ]
           this.productObser = this.productService.getProductList();
           // this.productObser.subscribe((p) => {
           //   console.log(p);
           // });
+          
+
         }
         break;
       case ProductConstants.CORE_CASE:
@@ -117,8 +120,10 @@ export class PcComponentsComponent implements OnInit {
 
     }
   }
-
-  cpucall() {
-
-  }
+name: string;
+public performSearch(key,value) {
+  // this.type = data;
+  this.dataService.setComponent(key,value);
+  this.router.navigateByUrl('/cutomize_intel');
+}
 }
