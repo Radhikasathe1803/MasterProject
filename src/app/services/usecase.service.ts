@@ -31,5 +31,9 @@ export class UsecaseService {
     /* /pc/inrange?start=4500.0&end=6000.0 */
     return this.httpClient.get(`${this.baseUrl}/byBrand?brand=${brand}`);
   }
+  getAllPc():Observable<any>{
+    const productUrl= '${this.baseUrl}/pc'
+    return this.httpClient.get('${this.baseUrl}')
+  }
 }
 
