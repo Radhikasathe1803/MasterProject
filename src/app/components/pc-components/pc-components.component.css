@@ -1,23 +1,12 @@
-table {
-  width: 90%;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
-
-.filter{
-  margin-top:2%;
-  margin-left: 4%;
- 
+img{
+  width:50%;
 }
-.mat-elevation-z8{
-  padding-top: 2%;
-  
-}
-.search{
-
-  margin-left: 90%;
-}
-
-.mat-elevation-z8 th{
-  background-color: #ff9100;
-  color : black;
-  font-size: 15px;
+.coolerI
+{
+  width:10%;
 }

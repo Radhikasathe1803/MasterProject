@@ -44,7 +44,7 @@ export class PcComponentsComponent implements OnInit {
     switch (this.type) {
       case ProductConstants.CORE_CPU:
         {
-          this.productHead = ["id", "name", "brand", "color", "coreClock", "coreCount", "graphicsType",
+          this.productHead = ["id","image", "name", "brand", "color", "coreClock", "coreCount", "graphicsType",
             "integratedGraphics", "manufacturer", "price", "simMultiThread", "tdp", "Available"
           ]
           this.productObser = this.productService.getProductList();
@@ -56,7 +56,8 @@ export class PcComponentsComponent implements OnInit {
       case ProductConstants.CORE_CASE:
         {
           console.log("in  case");
-          this.productHead = ["id", "coreCount", "coreClock", "tdp", "integratedGraphics", "simMultiThread", "graphicsType"]
+          this.productHead = ["id", "image","available","brand","color",
+          "externalBay","internalBay","name","powerSupply","price","sidePanelType","type"]
           this.productObser = this.caseservice.getProductList();
           // this.productObser.forEach(p => );
           this.productObser.subscribe((p) => {
@@ -67,7 +68,7 @@ export class PcComponentsComponent implements OnInit {
       case ProductConstants.CORE_COOLER:
         {
 
-          this.productHead = ["id", "fanRpm", "noiseLevel", "radiatorSize",]
+          this.productHead = ["id","image", "fanRpm", "noiseLevel", "radiatorSize",]
           this.productObser = this.cpuCooler.getProductList();
           // this.productObser.forEach(p => );
           this.productObser.subscribe((p) => {
@@ -78,37 +79,37 @@ export class PcComponentsComponent implements OnInit {
         break;
       case ProductConstants.CORE_GPU:
         {
-          this.productHead = ["id", "chipset", "videoMemory", "coreClock", "boostClock", "length", "thickNess"]
+          this.productHead = ["id","image", "chipset", "videoMemory", "coreClock", "boostClock", "length", "thickNess"]
           this.productObser = this.graphicsCard.getProductList();
         }
         break;
       case ProductConstants.CORE_MOBO:
         {
-          this.productHead = ["id", "socket", "FormFactor", "maxMemory", "memorySlots", "chipset"]
+          this.productHead = ["id","image", "socket", "FormFactor", "maxMemory", "memorySlots", "chipset"]
           this.productObser = this.motherBoard.getProductList();
         }
         break;
       case ProductConstants.CORE_MONITOR:
         {
-          this.productHead = ["id", " screenSize", "resultion", "refreshRate", "responseTime", "MonitorPanelType", "aspectRatio"]
+          this.productHead = ["id","image", " screenSize", "resultion", "refreshRate", "responseTime", "MonitorPanelType", "aspectRatio"]
           this.productObser = this.powerSupply.getProductList();
         }
         break;
       case ProductConstants.CORE_PSU:
         {
-          this.productHead = ["id", "formFactor", " wattage", "PowerModularType", "PowerEfficiencyType"]
+          this.productHead = ["id","image", "name","formFactor","wattage","efficiency","modular","price"]
           this.productObser = this.powerSupply.getProductList();
         }
         break;
       case ProductConstants.CORE_RAM:
         {
-          this.productHead = ["id", "noOfSticks", "ramSize", "totalSize", "RamType", "speed", "firstWordLatency", "columnAddressStrobe"]
+          this.productHead = ["id","image","name","noOfSticks","price","ramSize","speed","totalSize","type"]
           this.productObser = this.powerSupply.getProductList();
         }
         break;
       case ProductConstants.CORE_STORAGE:
         {
-          this.productHead = ["id", "capacity", "type", "cache", "formFactor", " interFace", " pricePerGb"]
+          this.productHead = ["id","image", "capacity", "type", "cache", "formFactor", " interFace", " pricePerGb"]
           this.productObser = this.storage.getProductList();
         }
         break;

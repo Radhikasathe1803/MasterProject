@@ -1,13 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { ProductConstants } from '../common/ProductConstants';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RamService {
 
-  private baseUrl = 'http://13.127.23.111:8080/products';
+  private baseUrl = `${ProductConstants.BASE_URL}${ProductConstants.PRODUCT_ENDPOINT}`
+  
 
   constructor(private httpClient: HttpClient) { }
 
