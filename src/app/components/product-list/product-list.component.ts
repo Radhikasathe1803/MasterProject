@@ -1,3 +1,4 @@
+import { Router, RouterModule } from '@angular/router';
 import { Observable } from 'rxjs';
 import { DataService } from 'src/app/services/data.service';
 import { UsecaseService } from './../../services/usecase.service';
@@ -17,7 +18,9 @@ export class ProductListComponent implements OnInit {
 //array of product class
   products: Observable<any[]>;
 //service injection
-  constructor(private usecaseService:UsecaseService,private dataService:DataService) { }
+  constructor(private usecaseService:UsecaseService,
+    private dataService:DataService,
+    private router: Router) { }
 
   ngOnInit() {
     this.listProducts();
@@ -30,6 +33,11 @@ export class ProductListComponent implements OnInit {
      (this.dataService.getData())
 
 
+  }
+  public selected(value) {
+    // this.type = data;
+    this.dataService.setData(value)
+    this.router.navigateByUrl('/addcomponent')
   }
 
 }

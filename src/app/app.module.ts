@@ -23,15 +23,17 @@ import { PcComponentsComponent } from './components/pc-components/pc-components.
 import { MatTableModule } from '@angular/material/table' ;
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-   
+
     IntelComponent,
     ProductListComponent,
     PcComponentsComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -12,13 +12,13 @@ export class HomeComponent {
   constructor(private dataService:DataService,
     private router: Router) {}
 
-  usecaseList  : Usecase []=[
+  /* usecaseList  : Usecase []=[
 
 
 new Usecase("For Student","assets/images/student.png","Students who want to build"),
 new Usecase("For Video Editing","assets/images/video.jpg","Students who want to build"),
 new Usecase("For Gaming","assets/images/gaming.jpg","Students who want to build"),
-];
+]; */
 
 public selected(value) {
   // this.type = data;

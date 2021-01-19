@@ -1,3 +1,4 @@
+import { CPU } from './../../common/products/cpu';
 import { PowersupplyService } from './../../services/powersupply.service';
 import { MotherBoardService } from './../../services/mother-board.service';
 import { GraphicsCard } from './../../common/products/graphics-card';
@@ -7,7 +8,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
-import { CPU } from 'src/app/common/products/cpu';
+
 import { Observable } from 'rxjs';
 import { ProductConstants } from 'src/app/common/ProductConstants';
 import { DataService } from 'src/app/services/data.service';
@@ -118,7 +119,13 @@ export class PcComponentsComponent implements OnInit {
     }
   }
 
-  cpucall() {
+  /* cpucall() {
 
-  }
+  } */
+
+  /* addToCart()
+  {
+    console.log('Adding to carts: ${p.name},${p.price}');
+
+  } */
 }
