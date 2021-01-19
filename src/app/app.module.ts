@@ -29,8 +29,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     NavComponent,
     HomeComponent,
+<<<<<<< HEAD
 
     IntelComponent,
+=======
+     IntelComponent,
+>>>>>>> e3bfbeb3e964e52f30be1beb7d614d74352b87f1
     ProductListComponent,
     PcComponentsComponent,
 

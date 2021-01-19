@@ -21,17 +21,23 @@ class="search"  placeholder="Please enter"></mat-search-bar> -->
       <td><img src="{{pd.imageUrl}}"> </td>
       <td>{{pd.name}}</td>
       <td>{{pd.brand}}</td>
-      <td>{{pd.color}}</td>
+      <!-- <td>{{pd.color}}</td> -->
       <td>{{pd.coreClock}}</td>
       <td>{{pd.coreCount}}</td>
       <td>{{pd.graphicsType}}</td>
-      <td>{{pd.integratedGraphics}</td>
+      <td>{{pd.integratedGraphics}}</td>
       <td>{{pd.manufacturer}}</td>
       <td>{{pd.price}}</td>
       <td>{{pd.simMultiThread}}</td>
       <td>{{pd.tdp}}</td>
       <td>{{pd.Available}}</td>
+<<<<<<< HEAD
       <td><button>Add</button></td>
+=======
+      <td><a mat-button routerLinkActive="list-item-active" (click)="performSearch('cpu',pd.id) ">
+       +Add</a></td>
+       <!-- <td><input type="button" >+ADD</td> -->
+>>>>>>> e3bfbeb3e964e52f30be1beb7d614d74352b87f1
     </tr>
   </tbody>
 </table>
@@ -49,7 +55,12 @@ class="search"  placeholder="Please enter"></mat-search-bar> -->
           <td>{{pd.fanRpm}}</td>
           <td>{{pd.noiseLevel}}</td>
           <td>{{pd.radiatorSize}}</td>
+<<<<<<< HEAD
           <td><button>Add</button></td>
+=======
+          <td><a mat-button routerLinkActive="list-item-active" (click)='performSearch(pd.fanRpm)'>
+            +Add</a></td>
+>>>>>>> e3bfbeb3e964e52f30be1beb7d614d74352b87f1
         </tr>
       </tbody>
     </table>
